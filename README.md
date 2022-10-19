@@ -31,10 +31,10 @@ Before using this repo, make sure you have installed:
 First you have to get the repo
 ```bash
 # Clone the repo 
-git clone git@github.com:Badisse/nextjs-typescript-docker-template.git
+git clone git@github.com:Badisse/site-perso.git
 
 # Get into the repo
-cd nextjs-typescript-docker-template
+cd site-perso
 ```
 
 You can now run the project:
