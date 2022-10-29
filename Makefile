@@ -27,6 +27,14 @@ build:
 start:
 	$(DC) up
 
+# Install dependencies
+yarn-install:
+	$(DCE) $(IMAGE) yarn install
+
+# Run dev server
+dev:
+	$(DCE) $(IMAGE) yarn dev
+
 # Stop and remove containers
 stop:
 	$(DC) down
@@ -39,4 +47,4 @@ install-package:
 exec:
 	$(DCE) $(IMAGE) $(COMMAND)
 
-.PHONY: help build start stop install-package
+.PHONY: help build start yarn-install dev stop install-package

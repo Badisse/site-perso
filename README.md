@@ -45,6 +45,12 @@ make build
 
 # Run the container
 make start
+
+# Run the container
+make start
+
+# Run the container
+make start
 ```
 
 
