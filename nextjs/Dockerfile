@@ -4,4 +4,4 @@ USER node
 
 WORKDIR /app
 
-CMD ["yarn", "dev"]
+CMD ["sleep", "infinity"]
