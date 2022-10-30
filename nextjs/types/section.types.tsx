@@ -1,4 +1,4 @@
 export interface Section {
-    text: string,
+    content: string,
     images: string[]
 }

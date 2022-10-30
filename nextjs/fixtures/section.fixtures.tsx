@@ -1,34 +1,32 @@
+import { Section } from "../types/section.types";
+
 export let sections = {
     home: {
-        text: "This is the home section",
+        content: "This is the home section",
         images: [] as string[]
-    },
-    about: {
-        text: "This is the about section",
-        images: [] as string[]
-    },
+    } as Section,
     web3: {
-        text: "This is the web3 section",
+        content: "This is the web3 section",
         images: [] as string[]
-    },
+    } as Section,
     skills: {
-        text: "This is the skills section",
+        content: "This is the skills section",
         images: [] as string[]
-    },
+    } as Section,
     qualifications: {
-        text: "This is the qualifications section",
+        content: "This is the qualifications section",
         images: [] as string[]
-    },
+    } as Section,
     portfolio: {
-        text: "This is the portfolio section",
+        content: "This is the portfolio section",
         images: [] as string[]
-    },
+    } as Section,
     blog: {
-        text: "This is the blog section",
+        content: "This is the blog section",
         images: [] as string[]
-    },
+    } as Section,
     contact: {
-        text: "This is the contact section",
+        content: "This is the contact section",
         images: [] as string[]
-    }
+    } as Section
 }

@@ -8,11 +8,6 @@ export const navMenus = [
         section: sections.home,
     } as NavMenu,
     {
-        title: "About Me",
-        href: "/#about-me",
-        section: sections.about,
-    } as NavMenu,
-    {
         title: "Web3 Introduction",
         href: "/#web3",
         section: sections.web3,
