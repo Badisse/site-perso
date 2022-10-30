@@ -1,4 +1,4 @@
 export interface Section {
-    content: string,
+    content: JSX.Element,
     images: string[]
 }
