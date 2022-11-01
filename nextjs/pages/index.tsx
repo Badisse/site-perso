@@ -37,12 +37,11 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className='flex mx-12 items-center gap-7 justify-center sm:gap-20'>
-                <div className="mt-6">
-
-                  <p className="mt-2 text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-white sm:text-4xl sm:mt-5">
+                <div>
+                  <p className="mt-3 text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-white sm:text-4xl sm:mt-5">
                     Blockchain Developer
                   </p>
-                  <p className="mt-6 text-xl sm:text-4xl sm:mt-8">
+                  <p className="mt-4 text-lg sm:text-4xl sm:mt-8">
                     <span className='font-semibold'>Web3</span> enthusiast. Currently working as <span className='font-semibold'>Full Stack Developer</span>. Feel free to reach out if you need a <span className='font-semibold'>Blockchain Developer</span> !
                   </p>
 

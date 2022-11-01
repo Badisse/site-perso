@@ -73,10 +73,12 @@ const Navbar: NextComponentType = () => {
               }
             </div>
             <div className="border-t border-gray-800 pt-8 pb-8">
-              <div className="flex items-center px-5 justify-around animate-pulse hover:scale-125 ease-out duration-300">
+              <div className="flex items-center px-5 justify-around">
                 {socialMedias.map((media) => {
                   return (
-                    <SocialIcon key={media.network} network={media.network} url={media.url} bgColor="#ffffff" />
+                    <div key={media.network} className='animate-pulse hover:scale-125 ease-out duration-300'>
+                      <SocialIcon network={media.network} url={media.url} bgColor="#ffffff" />
+                    </div>
                   )
                 })}
               </div>
