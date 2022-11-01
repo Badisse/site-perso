@@ -15,8 +15,8 @@ const Navbar: NextComponentType = () => {
       {({ open }) => (
         <>
           <div className="px-8">
-            <div className="flex h-16 items-center justify-between sm:justify-center">
-              <div className="flex items-center gap-20">
+            <div className="flex h-24 items-center justify-between sm:justify-center">
+              <div className="flex items-center gap-16">
                 <div className="hover:scale-125 ease-out duration-300 flex-shrink-0 bg-cyan-500 shadow-lg shadow-cyan-500/50 px-3 py-1 rounded-md">
                   <Link
                     href="/"
@@ -26,7 +26,7 @@ const Navbar: NextComponentType = () => {
 
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex gap-10">
+                  <div className="flex justify-between">
                     {navMenus.map((menu) => {
                       return (
                         <div key={menu.title} className='rounded-md px-3 py-2 text-xl font-bold text-white hover:bg-gray-700 hover:text-white'>
