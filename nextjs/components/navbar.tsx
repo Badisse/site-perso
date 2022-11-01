@@ -14,10 +14,10 @@ const Navbar: NextComponentType = () => {
     <Disclosure as="nav" className="bg-gray-800 fixed w-full z-10 top-0">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between">
-              <div className="flex items-center">
-                <div className="flex-shrink-0 bg-cyan-500 shadow-lg shadow-cyan-500/50 px-3 py-1 rounded-md">
+          <div className="px-8">
+            <div className="flex h-16 items-center justify-between sm:justify-center">
+              <div className="flex items-center gap-20">
+                <div className="hover:scale-125 ease-out duration-300 flex-shrink-0 bg-cyan-500 shadow-lg shadow-cyan-500/50 px-3 py-1 rounded-md">
                   <Link
                     href="/"
                   >
@@ -26,15 +26,14 @@ const Navbar: NextComponentType = () => {
 
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                  <div className="flex gap-10">
                     {navMenus.map((menu) => {
                       return (
-                        <div className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white font-bold'>
+                        <div className='rounded-md px-3 py-2 text-xl font-bold text-white hover:bg-gray-700 hover:text-white'>
                           <Link href={menu.href}>
                             {menu.title}
                           </Link>
                         </div>
-
                       )
                     })}
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
@@ -55,8 +54,8 @@ const Navbar: NextComponentType = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3">
+          <Disclosure.Panel className="bg-gradient-to-b from-gray-800 to-cyan-900 rounded-b-3xl mx-5 sm:hidden">
+            <div className="mb-4 space-y-1 px-2 pt-2 pb-3">
               {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */
 
                 navMenus.map((menu) => {
@@ -64,7 +63,7 @@ const Navbar: NextComponentType = () => {
                     <Disclosure.Button
                       as="a"
                       href={menu.href}
-                      className="block rounded-md px-3 py-2 text-xl font-semi-bold text-gray-300 hover:bg-gray-700 hover:text-white"
+                      className="block rounded-md px-3 py-2 text-xl font-semi-bold text-white hover:bg-gray-700 hover:text-white"
                     >
                       {menu.title}
                     </Disclosure.Button>
@@ -72,8 +71,8 @@ const Navbar: NextComponentType = () => {
                 })
               }
             </div>
-            <div className="border-t border-gray-700 pt-5 pb-4">
-              <div className="flex items-center px-5 justify-around">
+            <div className="border-t border-gray-800 pt-8 pb-8">
+              <div className="flex items-center px-5 justify-around animate-pulse hover:scale-125 ease-out duration-300">
                 {socialMedias.map((media) => {
                   return (
                     <SocialIcon network={media.network} url={media.url} bgColor="#ffffff" />

@@ -3,15 +3,15 @@ import { NavMenu } from "../types/navbar.types"
 
 export const navMenus = [
     {
-        title: "Home",
+        title: "About",
         href: "/",
-        section: sections.home,
+        section: sections.about,
     } as NavMenu,
-    {
+/**     {
         title: "Web3 Introduction",
         href: "/#web3",
         section: sections.web3,
-    } as NavMenu,
+    } as NavMenu,*/
     {
         title: "Skills",
         href: "/#skills",
@@ -27,11 +27,11 @@ export const navMenus = [
         href: "/#portfolio",
         section: sections.portfolio,
     } as NavMenu,
-    {
+/**    {
         title: "Blog",
         href: "/#blog",
         section: sections.blog,
-    } as NavMenu,
+    } as NavMenu,*/
     {
         title: "Contact",
         href: "/#contact",

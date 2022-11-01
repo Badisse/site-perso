@@ -14,10 +14,6 @@ export const socialMedias = [
         url: "https://twitter.com/BadisseBouab"
     } as SocialMedia,
     {
-        network: "stackoverflow",
-        url: "https://stackoverflow.com/users/20367290/badisse"
-    } as SocialMedia,
-    {
         network: "youtube",
         url: "https://www.youtube.com/channel/UCF0JVkei-3v5GPkN9ljD4Aw/featured"
     } as SocialMedia
