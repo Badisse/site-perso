@@ -29,7 +29,7 @@ const Navbar: NextComponentType = () => {
                   <div className="flex gap-10">
                     {navMenus.map((menu) => {
                       return (
-                        <div className='rounded-md px-3 py-2 text-xl font-bold text-white hover:bg-gray-700 hover:text-white'>
+                        <div key={menu.title} className='rounded-md px-3 py-2 text-xl font-bold text-white hover:bg-gray-700 hover:text-white'>
                           <Link href={menu.href}>
                             {menu.title}
                           </Link>
@@ -61,6 +61,7 @@ const Navbar: NextComponentType = () => {
                 navMenus.map((menu) => {
                   return (
                     <Disclosure.Button
+                      key={menu.title}
                       as="a"
                       href={menu.href}
                       className="block rounded-md px-3 py-2 text-xl font-semi-bold text-white hover:bg-gray-700 hover:text-white"
@@ -75,7 +76,7 @@ const Navbar: NextComponentType = () => {
               <div className="flex items-center px-5 justify-around animate-pulse hover:scale-125 ease-out duration-300">
                 {socialMedias.map((media) => {
                   return (
-                    <SocialIcon network={media.network} url={media.url} bgColor="#ffffff" />
+                    <SocialIcon key={media.network} network={media.network} url={media.url} bgColor="#ffffff" />
                   )
                 })}
               </div>
