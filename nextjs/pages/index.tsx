@@ -18,11 +18,11 @@ const Home: NextPage = () => {
 
       <Navbar />
       <div className='bg-gray-800 text-white'>
-        <div className='flex justify-center'>
+        <div className='flex justify-center mx-12'>
           <div>
             {/** About */}
             <div className="pt-40 max-w-5xl sm:pt-52">
-              <div className='flex mx-12 gap-2 sm:gap-5 sm:justify-start'>
+              <div className='flex gap-2 sm:gap-5 sm:justify-start'>
                 <Image
                   src='/developer.png'
                   alt="developer"
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex mx-12 items-center gap-7 justify-center sm:gap-20'>
+              <div className='flex items-center gap-7 justify-center sm:gap-20'>
                 <div>
                   <p className="mt-3 text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-white sm:text-4xl sm:mt-5">
                     Blockchain Developer
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
             </div>
 
             {/** Skills */}
-            <div className='mt-36'>
+            <div className='mt-36' id='skills'>
               <div className='flex flex-col items-center'>
                 <h2 className='font-medium text-3xl'>Skills</h2>
                 <h3 className='text-xl'>My Technical Knowledge</h3>
@@ -108,7 +108,7 @@ const Home: NextPage = () => {
             </div>
 
             {/** Qualifications */}
-            <div className='mt-36'>
+            <div className='mt-36' id='qualifications'>
               <div className='flex flex-col items-center'>
                 <h2 className='font-medium text-3xl'>Qualifications</h2>
                 <h3 className='text-xl'>My Personnal Journey</h3>
@@ -127,8 +127,8 @@ const Home: NextPage = () => {
               </div>
             </div>
 
-            {/** Qualifications */}
-            <div className='mt-36'>
+            {/** Portfolio */}
+            <div className='mt-36' id='portfolio'>
               <div className='flex flex-col items-center'>
                 <h2 className='font-medium text-3xl'>Portfolio</h2>
                 <h3 className='text-xl'>Most Recent Work</h3>
@@ -142,7 +142,7 @@ const Home: NextPage = () => {
             </div>
 
             {/** Contact */}
-            <div className='mt-36'>
+            <div className='mt-36' id='contact'>
               <div className='flex flex-col items-center'>
                 <h2 className='font-medium text-3xl'>Contact</h2>
                 <h3 className='text-xl'>Reach out</h3>
